@@ -1,0 +1,150 @@
+/* --- Base Styles (Reused from Login Page) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* --- Header & Navigation (Reused from Login Page) --- */
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3c9d3c;
+}
+
+.logo .icon {
+    background-color: #3c9d3c;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.logo-name {
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+/* Style for the active/current link */
+nav a.active-link {
+    font-weight: bold;
+}
+
+nav .log-in-btn {
+    background-color: #3c9d3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+
+/* --- About Page Specific Styles --- */
+.about-container {
+    width: 100%;
+    max-width: 1000px; /* Adjust width as needed */
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the 'About us' button/title */
+.page-title-button {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 30px;
+    border: 2px solid #3c9d3c; /* Green border */
+    color: #3c9d3c; /* Green text */
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    display: inline-block; /* Makes it fit the content */
+}
+
+/* --- About FITHUB Box --- */
+.about-fithub-box {
+    width: 100%;
+    max-width: 700px;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3c9d3c; /* Green text color for the content */
+    font-weight: 500;
+}
+
+/* --- Stats Section --- */
+.stats-section {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around; /* Distributes items evenly */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.stat-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3c9d3c; /* Green for the main numbers */
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+}

@@ -1,0 +1,182 @@
+/* --- Base Styles (Reused) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* --- Header & Navigation (Reused) --- */
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3c9d3c;
+}
+
+.logo .icon {
+    background-color: #3c9d3c;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.logo-name {
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav .log-in-btn {
+    background-color: #3c9d3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+/* --- Coach Profile Specific Styles --- */
+.profile-container {
+    width: 100%;
+    max-width: 900px; /* Adjust as needed */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.coach-profile-box {
+    width: 100%;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-content {
+    display: flex;
+    gap: 30px; /* Space between the image and details */
+    align-items: flex-start; /* Aligns content to the top */
+}
+
+/* --- Image Section --- */
+.profile-image-section {
+    flex-shrink: 0; /* Prevents the image section from shrinking */
+}
+
+.coach-photo {
+    width: 200px; /* Fixed size for the circular image */
+    height: 290px;
+    border-radius: 20%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #3c9d3c; /* Optional: Green border around the image */
+}
+
+/* --- Details Section --- */
+.profile-details-section {
+    flex-grow: 1; /* Allows the details section to fill the remaining space */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.personal-details,
+.contact-details {
+    line-height: 1.6;
+}
+
+.coach-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3c9d3c; /* Green for the name */
+    margin-bottom: 5px;
+}
+
+.academic-info {
+    font-size: 14px;
+    color: #3c9d3c;
+}
+
+.phone-number,
+.email-address {
+    font-size: 14px;
+    color: #3c9d3c; /* Green for contact info */
+    text-align: right; /* Aligns text to the right in the contact column */
+}
+
+/* --- Coach Bio --- */
+.coach-bio {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    padding-top: 20px;
+    border-top: 1px solid #ccc; /* Separator line above the bio */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-image-section {
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .personal-details,
+    .contact-details {
+        text-align: center;
+    }
+
+    .phone-number,
+    .email-address {
+        text-align: center;
+    }
+}

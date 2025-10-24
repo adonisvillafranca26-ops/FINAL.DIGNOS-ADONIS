@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHub - Login</title>
+    <link rel="stylesheet" href="log-in.css"> </head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="icon">🏋️</span> <span class="logo-name">FITHUB</span>
+        </div>
+        <nav>
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="log-in.html" class="log-in-btn">Log In</a>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <div class="login-box">
+            <h2 class="welcome-text">Welcome back</h2>
+            <p class="signin-text">Sign in to your FitHub account</p>
+
+            <form class="login-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="********" required>
+
+                <div class="actions">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <button type="submit" class="sign-in-btn">Sign in</button>
+                    <a href="#" class="forgot-password">Forgot password</a>
+                </div>
+            </form>
+        </div>
+
+        <p class="signup-prompt">
+            Don't have an account? <a href="#" class="signup-link">Sign up</a>
+        </p>
+
+        <p class="terms-policy">
+            By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+        </p>
+    </main>
+
+</body>
+</html>

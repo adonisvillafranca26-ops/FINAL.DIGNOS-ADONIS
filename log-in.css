@@ -1,0 +1,200 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* --- Header & Navigation --- */
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3c9d3c; /* Green color for the logo/icon */
+}
+
+.logo .icon {
+    background-color: #3c9d3c;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.logo-name {
+    color: #333; /* Darker color for the name */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav .log-in-btn {
+    background-color: #3c9d3c; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+/* --- Main Content and Login Box --- */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    flex-grow: 1; /* Pushes the terms/policy to the bottom */
+}
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d4eecb; /* Light green border */
+    background-color: #f7fff4; /* Very light green background */
+}
+
+.welcome-text {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.signin-text {
+    color: #3c9d3c; /* Green color */
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* --- Form Styles --- */
+.login-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0f8e0; /* Very light green input background */
+    border-color: #b3e0b3; /* Slightly darker green border on input */
+}
+
+.login-form input::placeholder {
+    color: #99c799; /* Light green placeholder text */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.sign-in-btn {
+    background-color: #3c9d3c; /* Main green button */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.sign-in-btn:hover {
+    background-color: #338833;
+}
+
+.forgot-password {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* --- Sign Up Prompt --- */
+.signup-prompt {
+    margin-top: 30px;
+    margin-bottom: 150px; /* Space above terms/policy */
+    font-size: 18px;
+    color: #3c9d3c; /* Green text */
+}
+
+.signup-link {
+    color: #3c9d3c; /* Green link */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* --- Terms and Policy --- */
+.terms-policy {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.terms-policy a {
+    color: #0000ff; /* Blue for contrast, as in the image */
+    text-decoration: none;
+}
+
+.terms-policy a:hover {
+    text-decoration: underline;
+}
